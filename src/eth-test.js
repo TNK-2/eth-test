@@ -33,7 +33,8 @@ var signTransaction = function() {
 
     // submit transaction
     web3.eth.sendSignedTransaction(signedTx.rawTransaction)
-      .then(console.log);
+      .then(console.log)
+      .catch(console.log);
     });
 };
 signTransaction()
